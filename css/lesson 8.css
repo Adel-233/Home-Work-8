@@ -1,0 +1,307 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
+
+.container{
+    width: 75%;
+    height: 100%;
+    margin: auto;
+}
+
+.d-flex{
+    display: flex;
+}
+.flex-row{
+    flex-direction: row;
+}
+
+.justify-content-center{
+    justify-content: center;
+}
+
+.justify-content-between{
+    justify-content: space-between;
+}
+
+.justify-content-evenly{
+    justify-content: space-evenly;
+}
+
+.justify-content-around{
+    justify-content: space-around;
+}
+
+.align-items-center{
+    align-items: center;
+}
+
+.flex-direction-column{
+    flex-direction: column;   
+}
+
+.text-center{
+    text-align: center;
+}
+/*start nav*/
+
+nav{
+    width: 100%;
+    height: 60px;
+    background-color: #212529;
+    position: fixed;
+}
+
+.nav-logo ,.nav-link{
+    width: 100%;
+}
+
+.nav-logo img{
+    width: 40%;
+}
+
+.nav-link ul{
+    height: 100%;
+    list-style: none;
+}
+
+.nav-link a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+}
+
+.nav-link a:hover{
+    color: #ffc800;
+}
+
+.nav-btn{
+    color: white;
+    font-size: 20px;
+    display: none;
+}
+
+.nav-btn:hover{
+    color: #ffc800;
+}
+
+@media(max-width:680px){
+    .container{
+        flex-direction: column;
+    }
+    .nav-link{
+        display: none;
+    }
+    .nav-btn{
+        display: flex;
+    }
+    nav .container{
+        flex-direction: row;
+        align-items: center;
+    }
+
+}
+
+/*end nav*/
+
+/*start header*/
+
+header{
+    width: 100%;
+    height: auto;
+    background-attachment: fixed;
+    background-image: url(../img/header-bg.jpg);
+    color: white;
+}
+
+header p{
+    font-size: 35px;
+    text-transform: capitalize;
+}
+
+header h1{
+    font-size: 60px;
+    text-transform: uppercase;
+    margin: 15px 0px;
+}
+
+header button{
+    background-color: #ffc800;
+    color: #ffc800;
+    padding: 10px 20px;
+    border: 1px solid #ffc800;
+    border-radius: 5px;
+    color: white;
+    text-transform: uppercase;
+}
+
+header button:hover{
+    background-color: #ead898;
+}
+
+@media(max-width:927px){
+    header h1{
+        font-size: 35px;
+    }
+}
+
+@media(max-width:695px){
+    header .container{
+        align-items: flex-start;
+    }
+}
+
+/*end header*/
+
+/*start services*/
+
+.services{
+    width: 100%;
+    height: auto;
+    padding: 70px 0px;
+}
+
+.services h1{
+    font-size: 30px;
+    margin-top: 5px;
+}
+
+.service{
+    height: auto;
+}
+
+.service i{
+    padding: 30px;
+    margin-bottom: 10px;
+    background-color: #ffc800;
+    color: white;
+    border-radius: 50%;
+    font-size: 35px;
+}
+
+@media(max-width:680px){
+    .services .container{
+        flex-direction: column;
+    }
+    .services{
+        height: 900px;
+    }
+}
+
+/*end services*/
+
+/*start portfolio*/
+
+.portfolio{
+    width: 100%;
+    height: auto;
+    background-color: rgb(248, 249, 250);
+}
+
+.portfolio h1{
+    padding-top: 10px;
+    text-transform: uppercase;
+    font-size: 30px;
+}
+
+
+.portfolio p{
+    padding-top: 10px;
+    text-transform: capitalize;
+}
+
+.porjeck-img img{
+    width: 100%;
+}
+
+.portfolio-projeck{
+    width: 32%;
+    height: auto;
+    margin-top: 5px;
+    background-color: white;
+    border-radius: 5px;
+}
+
+.portfolio .container{
+    flex-wrap: wrap;
+}
+
+@media(max-width:685px){
+    .portfolio .container{
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+    .portfolio-projeck{
+        width: 100%;
+    }
+    .portfolio{
+        height: 5000px;
+    }
+}
+/*end portfolio*/
+
+/*strat madia*/
+
+.media{
+    width: 100%;
+    height: auto;
+}
+
+.media img{
+    width: 20%;
+}
+
+@media (max-width:679px){
+    .media .container{
+        flex-direction: column;
+    }
+
+    .media{
+        justify-content: flex-start;
+    }
+}
+
+/*end media*/
+
+/* start form*/
+form{
+    width: 100%;
+    height: 100%;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.87);
+     background-size: cover;
+}
+.input h1{
+    text-transform: uppercase;
+    padding: 20px 0px;
+}
+
+.name input{
+    padding: 10px 200px 10px 0px;
+    border-radius: 2%;
+}
+.message input{
+    padding: 70px 100px;
+}
+.but input{
+    margin: 10px;
+    padding: 10px;
+    background-color: #ffc800;
+    text-transform: uppercase;
+    color: white;
+    border-radius: 10%;
+}
+
+.but input:hover{
+    background-color: #e1cb79;
+    cursor: pointer;
+}
+
+@media(max--width:366px){
+    .input .contianer{
+        flex-direction: column;
+    }
+    
+}
+/* end form*/
